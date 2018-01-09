@@ -1,0 +1,40 @@
+
+.index-box{
+	width: auto;
+	height: auto;
+}
+
+.B{
+	width:auto;
+	margin: 20px;
+	
+	height: auto;
+}
+.img{
+	height: auto;
+	width: auto;
+	
+	border: 2px solid #48BC01;
+	
+}
+#A1,#A2,#A3,#B1,#B2,#B3{
+	border: 2px solid #9ACD32;
+	
+	
+   height: 300px;
+	width: 300px;
+}
+#A1{float: left;}
+#A2{
+	float: left;
+	margin-left: 10px;
+}
+#A3{
+	float: right;
+}
+#box {
+	border: 1px solid #C70B09;
+  width: 70px;
+  margin: 10px;
+  height: auto;
+}

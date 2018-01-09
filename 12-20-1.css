@@ -1,0 +1,22 @@
+.class1{
+	color: #843534;
+	border: 2px solid #0087C9;
+	height: 100px;
+	width: 100px;
+	margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+	padding: 10px;
+}
+.class2{
+	color: #985F0D;
+	border:2px solid #398439;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	padding: 10px;
+}
+#3{
+	position:absolute;
+right:0px;
+}
