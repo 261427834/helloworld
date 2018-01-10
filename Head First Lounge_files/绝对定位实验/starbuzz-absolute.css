@@ -10,13 +10,13 @@ body{
 	margin: 10px;
 	height: 108px;
 }
-#allcontent{
+/* #allcontent{
 	padding: 5px 0px;
 	width: 800px;
 	background: #675C47;
 	margin-right: auto;
 	margin-left: auto;
-}
+} */
 #main{
 	background: #efe5d0 url(https://github.com/youngdad33/Head-First-HTML/blob/master/chapter11/starbuzz/images/background.gif?raw=true) top left;
 	font-size: 105%;
@@ -29,7 +29,9 @@ body{
 	font-size: 105%;
 	padding: 15px;
 	margin: 0px 10px 10px 10px;
-	float: right;
+	position: absolute;
+	top: 128px;
+	right: 0px;
 	width: 280px;
 }
 #footer{
