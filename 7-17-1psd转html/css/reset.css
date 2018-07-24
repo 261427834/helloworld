@@ -1,0 +1,27 @@
+reset.css
+*{
+   margin:0;
+   padding: 0;
+}
+ul,li,ol{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   display: block;
+   color: #fff;
+}
+img{
+   border: none;
+   display: block;
+}
+.clearfloat{   /*清除浮动*/
+   zoom: 1;  /*触发IE事件*/
+}
+.clearfloat:after{
+   display: block;
+   clear: both;
+   content: "";
+   visibility: hidden;    /*将元素隐藏*/
+   height: 0;
+}

@@ -1,0 +1,20 @@
+/* group 1 */
+h1 {color:silver; background:white;}
+h2 {color:silver; background:gray;}
+h3 {color:white; background:gray;}
+h4 {color:silver; background:white;}
+p {color:gray; background:white;}
+
+/* group 2 */
+h1, h2, h4 {color:silver;}
+h2, h3 {background:gray;}
+h1, h4, p {background:white;}
+h3 {color:white;}
+p {color:gray;}
+
+/* group 3 */
+h1, h4 {color:silver; background:white;}
+h2 {color:silver;}
+h3 {color:white;}
+h2, h3 {background:gray;}
+p {color:gray; background:white;}
