@@ -25,7 +25,7 @@ html {
 body {
   margin: 0;
 }
-
+-webkit-padding-start
 /**
  * Add the correct display in IE 9-.
  */
@@ -444,4 +444,15 @@ template {
 
 [hidden] {
   display: none;
+}
+/* 7-31 自己添加 */
+ul ,li {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }

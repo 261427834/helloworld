@@ -13,7 +13,10 @@
 	clear: both;
 }
 /*清浮动*/
-
+ul, li {
+    list-style: none;
+    padding: 0px;
+}
 
 body{
     background-position: left top;
@@ -27,6 +30,11 @@ body{
     width: 850px;
     height: auto;
     margin: 40px auto auto auto;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.2em;
+    color: #CC0000;
 }
 header{
     background-position: left top;
@@ -41,7 +49,164 @@ left: 50px;
 }
 .main-left{
     float: left;
+    padding: 15px;
 }
 .main-right{
-    float: right;
+    width: 600px;
+    padding: 0px 15px 15px 15px;
+    float: left;
+    text-align: justify;
+    /* border: 1px solid #000000;*/
+} 
+
+.nav{
+    width: 550px;
+    height: 50px;
+}
+.nav ul{
+    width: 550px;
+    height: 50px;
+}
+.nav ul li  {
+    float: left;
+    list-style: none;
+    width: 105px;
+    height: 30px;
+    padding: 5px;
+    background-image:url('../img/bt_bg.jpg');  background-repeat:no-repeat;
+    background-position: center;
+    text-align: center;
+
+}
+.nav ul li:hover{
+    background-image:url('../img/bt_bg_a.jpg');  background-repeat:no-repeat;
+    background-position: center;
+}
+.nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: bolder;
+    }
+h1,h2,h3{
+    color:#000000;
+    font-size: 18px;
+    font-weight: bolder;
+   padding-bottom: 10px;
+    border-bottom:  1px #FEAFAF dotted;
+
+}
+h1{
+   
+    margin: 20px 0px 5px 0px;
+}
+.main-left-box{
+    width: 250px;
+    float: left;
+    padding: 10px;
+    margin-top: 10px;
+   
+
+}
+.main-right-box{
+    float: left;
+    width: 295px;
+    padding: 10px 10px 10px 20px;
+    margin-top: 15px;
+    border-left:  1px #FEAFAF dotted;
+
+}
+.main-right-box h2{
+    width: 295px;
+}
+
+/* 下方礼物图片 */
+.gift{
+width: 600px;
+height: 120px;
+}
+.gift li{
+float: left;
+/* padding: 5px; */
+/* border: 1px solid #000000; */
+
+
+}
+.gift li a img {
+width: 110px;
+height: 110px;
+}
+/* 表单 */
+.main-form{
+    width: 600px;
+    /* border: 1px solid #000000;  */
+
+}
+.message{
+    position: relative;
+    
+}
+.message input{
+    
+    width: 300px;
+    height: 35px;
+    background:url('../img/input_bg.jpg') no-repeat;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    line-height: 35px;
+    background-position: -4px 0px;
+    /* text-align: center; */
+
+    padding-left: 10px;
+}
+.form-msg{
+    width: 270px;
+    height: 100px;
+    background:url('../img/textarea.jpg')  no-repeat
+    left top ;
+    /* background-position: -4px 0px; */
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-top:10px;
+    padding-left: 10px;
+    overflow: hidden;
+
+
+    /* line-height: 100px; */
+}
+
+/* 新方法 */
+.message label {
+    display:inline-block;
+     width: 50px;
+      margin-right: 40px;
+       text-align: right;
+       padding-bottom: 20px;
+       font-weight: bold;
+       color: #510000;
+     }
+.btn{
+    /* position: absolute;
+    left: 30px;
+    bottom: -20px; */
+margin-left: 100px;
+    display: block;
+    width: 200px; 
+    height: 50px;
+    background-color: rgb(128, 88, 88);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+
+
+
+}
+/* footer */
+footer{
+    width: 850px;
+    height: 133px;
+    background: url("../img/footer.jpg") no-repeat ;
 }
