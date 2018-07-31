@@ -1,0 +1,47 @@
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.clearfix:after {
+	clear: both;
+}
+/*清浮动*/
+
+
+body{
+    background-position: left top;
+    background-image:url('../img/bg.jpg'); background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-color: #380001;
+
+}
+.wrap{
+    position: relative;
+    width: 850px;
+    height: auto;
+    margin: 40px auto auto auto;
+}
+header{
+    background-position: left top;
+    background-image:url('../img/top_banner.jpg'); background-repeat:no-repeat;
+    width: 850px;
+    height: 120px;
+}
+header  .logo{
+position: absolute;
+top:15px;
+left: 50px;
+}
+.main-left{
+    float: left;
+}
+.main-right{
+    float: right;
+}
