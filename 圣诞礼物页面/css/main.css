@@ -146,6 +146,7 @@ height: 110px;
     position: relative;
     
 }
+
 .message input{
     
     width: 300px;
@@ -160,6 +161,7 @@ height: 110px;
 
     padding-left: 10px;
 }
+
 .form-msg{
     width: 270px;
     height: 100px;
