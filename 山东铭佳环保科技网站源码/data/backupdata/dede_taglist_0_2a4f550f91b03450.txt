@@ -1,0 +1,5 @@
+INSERT INTO `dede_taglist` VALUES('1','11','0','31','环保管家');
+INSERT INTO `dede_taglist` VALUES('2','12','0','31','环境影响评价');
+INSERT INTO `dede_taglist` VALUES('3','13','0','31','竣工环保验收');
+INSERT INTO `dede_taglist` VALUES('4','14','0','31','环境监理');
+INSERT INTO `dede_taglist` VALUES('5','15','0','32','可行性研究');

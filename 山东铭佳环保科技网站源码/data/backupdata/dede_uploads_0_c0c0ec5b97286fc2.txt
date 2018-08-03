@@ -1,0 +1,15 @@
+INSERT INTO `dede_uploads` VALUES('1','1','日照环境保护网 - 环保新闻','/uploads/allimg/180204/1-1P204163GD38.jpg','1','860','573','0','254932','1517733436','1');
+INSERT INTO `dede_uploads` VALUES('2','3','日照环境保护网 - 环保新闻','/uploads/allimg/180204/1-1P204163Z0917.jpg','1','860','573','0','221743','1517733540','1');
+INSERT INTO `dede_uploads` VALUES('3','0','180205/1-1P205093953938.jpg','/uploads/allimg/180205/1-1P205093953938.jpg','1','1000','762','0','120296','1517794793','1');
+INSERT INTO `dede_uploads` VALUES('4','0','180205/1-1P205094I5940.jpg','/uploads/allimg/180205/1-1P205094I5940.jpg','1','1000','762','0','120296','1517795255','1');
+INSERT INTO `dede_uploads` VALUES('5','5','技术领航 | 博环技术委员会召开第一次项目讨论','/uploads/allimg/180207/154U62F2-0.png','1','638','399','0','483729','1517989740','1');
+INSERT INTO `dede_uploads` VALUES('6','6','技术领航 | 博环技术委员会召开第一次项目讨论','/uploads/allimg/180207/154Z1J01-0.png','1','638','399','0','483729','1517989742','1');
+INSERT INTO `dede_uploads` VALUES('7','7','技术领航 | 博环技术委员会召开第一次项目讨论','/uploads/allimg/180207/154Z33O3-0.png','1','638','399','0','483729','1517989744','1');
+INSERT INTO `dede_uploads` VALUES('8','8','技术领航 | 博环技术委员会召开第一次项目讨论','/uploads/allimg/180207/154Z5M41-0.png','1','638','399','0','483729','1517989746','1');
+INSERT INTO `dede_uploads` VALUES('9','8','山东铭佳环保科技有限公司','/uploads/allimg/180207/1-1P20G60235b3.jpg','1','860','573','0','221743','1517990555','1');
+INSERT INTO `dede_uploads` VALUES('10','11','环保管家','/uploads/allimg/180209/1-1P209153F80-L.jpg','1','0','0','0','46995','1518161828','1');
+INSERT INTO `dede_uploads` VALUES('11','11','环保管家','/uploads/allimg/180209/1540104316-0.jpg','1','740','575','0','147488','1518162011','1');
+INSERT INTO `dede_uploads` VALUES('12','13','竣工环保验收','/uploads/allimg/180209/1-1P2091543020-L.jpg','1','0','0','0','163733','1518162182','1');
+INSERT INTO `dede_uploads` VALUES('13','14','环境监理','/uploads/allimg/180209/1-1P2091545070-L.jpg','1','0','0','0','62372','1518162307','1');
+INSERT INTO `dede_uploads` VALUES('14','15','可行性研究','/uploads/allimg/180209/1-1P2091550223P.png','1','485','301','0','392688','1518162622','1');
+INSERT INTO `dede_uploads` VALUES('15','15','可行性研究','/uploads/allimg/180209/1-1P2091550330-L.png','1','0','0','0','392688','1518162633','1');

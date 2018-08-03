@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<body onload="resizeimg();">
+<style> a {text-decoration: none;}</style>
+<script>
+var count = 10;
+function zoompic(obj)
+{
+
+  var s=obj.style.zoom;
+  if ((s== "undefined") || (s==""))
+  {
+     count=10;
+  }
+  else
+  {
+    l=s.length;
+    l=l-1;
+    s2=s.substr(0,l);
+    count=parseInt(s2);
+    count=count /10;
+    // alert(count);
+  }
+  
+  if (count<2) count=2;
+  if (count>90) count=90;
+  
+  if (event.wheelDelta >= 120)  count++;
+  else if (event.wheelDelta <= -120) count--; 
+
+
+//  obj.alt= '缩放比列:'+count+'0%';
+  obj.style.zoom = count + '0%';
+  return false;
+}
+
+function Counting(count)
+{ 
+  if (event.wheelDelta >= 120)  count++;
+  else if (event.wheelDelta <= -120) count--; 
+  return count; 
+}
+</script>
+<script>
+function resizeimg()
+{
+ for (j=0;j<document.images.length;j++)
+ {
+  n= document.images[j].name;
+  if  (n.indexOf("p")==0)
+     document.images[j].width=(document.images[j].width>100)?"100":document.images[j].width;
+ }
+
+}
+</script>
+
+<P>文件生成日期:2018-02-02 14:54</P>
+<p>图片共计5张,保存成功5,忽略0,失败0</p>
+<p><strong><font color=#008000>纵列显示：</font></strong></p>
+<p><img src="./bohuanchina.com/00001_au-img3.jpg"></p>
+<p><img src="./bohuanchina.com/00002_c04f4fc74c1074a8e6d049e6484cfaac.jpg"></p>
+<p><img src="./bohuanchina.com/00003_0f9ce903c65aafd6a54114f02a184733.jpg"></p>
+<p><img src="./bohuanchina.com/00004_3a79f175150eca612f57d5a40da16b9b.jpg"></p>
+<p><img src="./bohuanchina.com/00005_afa91f66148cf22d93f112bc0e3446f0.jpg"></p>
+<p><strong><font color=#008000>本地文件名称,网页上显示的宽*高:</font></strong><br>
+<a target=_blank href="./bohuanchina.com/00001_au-img3.jpg">./bohuanchina.com/00001_au-img3.jpg</a>,1000*300<br>
+<a target=_blank href="./bohuanchina.com/00002_c04f4fc74c1074a8e6d049e6484cfaac.jpg">./bohuanchina.com/00002_c04f4fc74c1074a8e6d049e6484cfaac.jpg</a>,288*216<br>
+<a target=_blank href="./bohuanchina.com/00003_0f9ce903c65aafd6a54114f02a184733.jpg">./bohuanchina.com/00003_0f9ce903c65aafd6a54114f02a184733.jpg</a>,398*298<br>
+<a target=_blank href="./bohuanchina.com/00004_3a79f175150eca612f57d5a40da16b9b.jpg">./bohuanchina.com/00004_3a79f175150eca612f57d5a40da16b9b.jpg</a>,288*216<br>
+<a target=_blank href="./bohuanchina.com/00005_afa91f66148cf22d93f112bc0e3446f0.jpg">./bohuanchina.com/00005_afa91f66148cf22d93f112bc0e3446f0.jpg</a>,1138*437<br>
+<p><strong><font color=#008000>网页标题:</font></strong><br>关于博环 - 广西博环环境咨询服务有限公司<br>
+<p><strong><font color=#008000>网页网址:</font></strong><br><a href="http://www.bohuanchina.com/guanyuwomen/" target=_blank>http://www.bohuanchina.com/guanyuwomen/</a><br>
+<p><strong><font color=#008000>图片网址:</font></strong><br>
+<a target=_blank href="http://www.bohuanchina.com/public/pc/images/au-img3.jpg">http://www.bohuanchina.com/public/pc/images/au-img3.jpg</a><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201702/c04f4fc74c1074a8e6d049e6484cfaac.jpg">http://www.bohuanchina.com/public/uploads/1/201702/c04f4fc74c1074a8e6d049e6484cfaac.jpg</a><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201703/0f9ce903c65aafd6a54114f02a184733.jpg">http://www.bohuanchina.com/public/uploads/1/201703/0f9ce903c65aafd6a54114f02a184733.jpg</a><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201703/3a79f175150eca612f57d5a40da16b9b.jpg">http://www.bohuanchina.com/public/uploads/1/201703/3a79f175150eca612f57d5a40da16b9b.jpg</a><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201712/afa91f66148cf22d93f112bc0e3446f0.jpg">http://www.bohuanchina.com/public/uploads/1/201712/afa91f66148cf22d93f112bc0e3446f0.jpg</a><br>
+<p><strong><font color=#008000>图片链接:</font></strong><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201702/c04f4fc74c1074a8e6d049e6484cfaac.jpg">http://www.bohuanchina.com/public/uploads/1/201702/c04f4fc74c1074a8e6d049e6484cfaac.jpg</a><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201703/0f9ce903c65aafd6a54114f02a184733.jpg">http://www.bohuanchina.com/public/uploads/1/201703/0f9ce903c65aafd6a54114f02a184733.jpg</a><br>
+<a target=_blank href="http://www.bohuanchina.com/public/uploads/1/201703/3a79f175150eca612f57d5a40da16b9b.jpg">http://www.bohuanchina.com/public/uploads/1/201703/3a79f175150eca612f57d5a40da16b9b.jpg</a><br>
+<br><br>
+<p><strong><font color=#008000>本网页由<a target=_blank href=http://pay500.net/picsaver.htm>网页图片保存能手免费版12.1.0.0</a>自动生成,图片可用鼠标滚轮缩放<br>
+欢迎 <a href=http://t.hao500.com target=_blank>咨询或反馈</a>。
+作者主页:<a target=_blank href=http://pay500.net>光明软件工作室</a></strong></font></p>
+<p><font color=#008000>推荐网站：
+<a target=_blank href=http://bbs.xuekuaiji.com title="学会计论坛">学会计论坛</a>
+<a target=_blank href=http://pay500.com title="大量软件下载">光明软件园</a>
+<a target=_blank href=http://pingbao.net title="中文屏保第1站">光明屏保站</a>
+<a target=_blank href=http://jingdianxiaohua.com title="经典笑话">经典笑话</a>
+</font></p>

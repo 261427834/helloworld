@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+	作者：songyan130@163.com songyan
+	时间：2018-01-31
+	描述：铭佳环保科技
+-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>山东铭佳环保科技有限公司官网-- 一站式环境综合服务</title>
+		<link href="{dede:global.cfg_templets_skin/}/style/page_index.min.css" rel="stylesheet" type="text/css" />
+		<link href="{dede:global.cfg_templets_skin/}/style/layer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/tf.css" />
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/jquery.js"></script>
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/banner.js"></script>
+		<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/index.js"></script>
+
+		<!-- 这里是平常要引入的文件 -->
+
+		<meta name="Keywords" content="{dede:global.cfg_keywords/}" />
+		<meta name="description" content="{dede:global.cfg_description/}" />
+		<script src="{dede:global.cfg_templets_skin/}/style/jquery.min.js" type="text/javascript"></script>
+		<script src="{dede:global.cfg_templets_skin/}/style/layer/layer.js" type="text/javascript"></script>
+		<script src="{dede:global.cfg_templets_skin/}/style/public.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var root = '';
+			var uid = '';
+		</script>
+
+		<!-- 这里分页的样式，可以放到你的css文件 -->
+		<style>
+			.pageshow {
+				width: 600px;
+				margin: 0 auto;
+				height: 40px;
+				clear: both;
+				margin-top: 10px;
+			}
+			
+			.pageshow .current {
+				background: #14818C;
+				color: #FFFFFF;
+				height: 40px;
+				width: 50px;
+				padding: 5px 10px;
+				margin-left: 5px;
+			}
+			
+			.pageshow .btn-danger,
+			.pageshow .num,
+			.pageshow .prev,
+			.pageshow .next,
+			.pageshow .first,
+			.pageshow .end {
+				height: 40px;
+				width: 50px;
+				background: #E2E2E2;
+				color: #999999;
+				padding: 5px 10px;
+				margin-left: 5px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="hdo">
+				<div class="hdoc mo">
+					<span class="fl"><a class="act" href="#">English</a><i>|</i><a href="#">简体中文</a></span>
+					<em class="fr"><a href="#"></a></em>
+					<p class="fr">
+						<i>
+                <a href="404.html">OA内网</a>
+                </i>
+						<i>
+                <a href="404.html">OA外网</a>
+                </i>
+						<i>
+                <a href="404.html">企业邮箱</a>
+                </i>
+					</p>
+				</div>
+			</div>
+			<div class="headercenter mo">
+				<div class="logo fl" style="width: auto;height: 59px;padding-top: 22px;">
+					<a href="/"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" alt="" style="width: 288px;height: auto" /></a>
+				</div>
+				<div class="hdbr fr">
+					<ul>
+						<li>
+						<a href="{dede:global.cfg_indexurl/}">首页</a>
+						</li>
+						{dede:channel       row='6'    type ='top'  currentstyle="<li class='act' ><a href='~typelink~' class='thisclass'>~typename~</a> </li>"            }
+						<li>
+					<!--
+                    	作者：songyan130@163.com
+                    	时间：2018-02-02
+                    	描述：
+                      <li class="act">-->
+						<a href="[field:typelink/]">[field:typename/]</a>
+						</li>	
+						
+             {/dede:channel} 
+			
+					</ul>
+					<p><i></i></p>
+				</div>
+			</div>
+		</div>
+		

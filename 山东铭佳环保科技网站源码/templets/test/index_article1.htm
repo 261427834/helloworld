@@ -1,0 +1,23 @@
+{dede:include filename="head.htm"/}
+                                   <!--
+                                   	作者：songyan130@163.com
+                                   	时间：2018-02-07
+                                   	描述：此模板为服务项目下的分项模板，主要是因为banner图的id太多，不想一一找图片填充。特意将所有分项的banner设置为fenyebanner14.jpg/日后想要修改的话就将下面的fenyebanner14.jpg改为fenyebanner[field:id/].jpg。同时在templets/images文件夹中一一添加各分项的banner图片。
+                                   -->
+<div class="content">
+<div class="cu-banner" style="text-align: center;margin: 1px auto;" >
+	{dede:type}
+	<img class="bannerIma"style="text-align: center;" src="/templets/test/images/fenyebanner14.jpg" width="1343"height="350"  alt="山东铭佳环保科技-[field:typename/]" />
+	{/dede:type}
+</div>
+	<div class="au-bt most" style="margin-top:50px;">
+
+<div class="cubxz">{dede:field.content/}</div>
+	</div>
+</div>
+<!--
+	作者：songyan130@163.com
+	时间：2018-02-01
+	描述：网页底部调用
+-->
+{dede:include filename="footer.htm"/}

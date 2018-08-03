@@ -1,0 +1,1 @@
+<img class="bannerIma"style="text-align: center;" src="/templets/test/images/fenyebanner[field:id/].jpg" width="1343"height="350"  alt="[field:typename/]" />

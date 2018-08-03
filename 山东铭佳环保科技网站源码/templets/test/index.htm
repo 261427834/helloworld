@@ -1,0 +1,166 @@
+ {dede:include filename="head.htm"/}
+<div class="content">
+			<div class="banner">
+				<div class="b-img">
+					<a href="" style="background:url({dede:global.cfg_templets_skin/}/images/banner1.png) center no-repeat;"></a>
+					<a href="" style="background:url({dede:global.cfg_templets_skin/}/images/banner2.png) center no-repeat;"></a>
+					<a href="" style="background:url({dede:global.cfg_templets_skin/}/images/banner3.png) center no-repeat;"></a>
+				</div>
+				<div class="b-list"></div>
+				<a class="bar-left" href="#"><em></em></a>
+				<a class="bar-right" href="#"><em></em></a>
+			</div>
+<div class="contentcenter mo">
+		<div class="io-col">
+			<!--
+            	作者：songyan130@163.com
+            	时间：2018-01-24
+            	描述：首页大标题
+            -->
+			<b class="fl"><i>新闻资讯</i>NEWS CENTER</b>
+			<em class="fr"><a href="{dede:global.cfg_indexurl/}qiyezixun/">更多&gt;&gt;</a></em>
+		</div>
+		<div class="itx most">
+			<div class="itx-lt fl">
+
+				<div class="itxln-lt">
+					<a href="javascript:;"></a>
+				</div>
+				<div class="itxln-rt">
+					<a href="javascript:;"></a>
+				</div>
+				<!--
+                	作者：songyan130@163.com
+                	时间：2018-01-24
+                	描述：首页左侧图片展示栏
+                -->
+				<div class="itxln-ct">
+					<ul style="width: 2912px; left: -136.314px;">
+											{dede:arclist    row='5'     titlelen='30'   orderby ='pubdate'   typeid='10','9','31''32'              }
+							<a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:arcurl/]">
+								<p>[field:title/]</p>
+							</a>
+						</li>
+						{/dede:arclist}
+					</ul>
+				</div>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						var $width = $(".itxln-ct li").width(),
+							key = 0,
+							number = 0;
+						$(".itxln-ct ul").css({
+							width: $width * $(".itxln-ct ul li").length
+						});
+						var time = setInterval(xxd, 3000);
+
+						function xxd() {
+							$(".itxln-ct ul").stop().animate({
+								left: -$width
+							}, 1000, function() {
+								$(this).css({
+									left: "0"
+								}).find("li:first").appendTo(this);
+							});
+						}
+						/*left*/
+						$(".itxln-lt a").mousedown(function() {
+							clearTimeout(time);
+							$(".itxln-ct ul").find("li:last").prependTo(".itxln-ct ul");
+							$(".itxln-ct ul").css({
+								left: "-416px"
+							}).stop().animate({
+								left: "0px"
+							}, 500);
+							time = setInterval(xxd, 4000);
+						})
+						/*right*/
+						$(".itxln-rt a").mousedown(function() {
+							clearTimeout(time);
+							$(".itxln-ct ul").stop().animate({
+								left: "-416px"
+							}, 500, function() {
+								$(this).css({
+									left: "0"
+								}).find("li:first").appendTo(this);
+							});
+							time = setInterval(xxd, 4000);
+						})
+						$(".itxln-ct ul li").hover(function() {
+							clearTimeout(time);
+						}, function() {
+							time = setInterval(xxd, 4000);
+						})
+					})
+				</script>
+			</div>
+			<!--
+            	作者：songyan130@163.com
+            	时间：2018-01-24
+            	描述：首页文章列表
+            -->
+			<ul class="itx-rt fr">
+				{dede:arclist    row='5'     titlelen='60'    typeid='10'   infolen='200'           }
+				<li>
+					<a href="[field:arcurl/]" class="fl">[field:title/]</a><em class="fr">[field:pubdate function="MyDate('m-d',@me)"/]</em></li>
+				{/dede:arclist}
+			</ul>
+		</div>
+		<div class="io-col">
+			<!--
+            	作者：songyan130@163.com
+            	时间：2018-01-24
+            	描述：首页下部图片栏
+            -->
+			<b class="fl"><i>主营业务</i>MAIN BUSINESS</b>
+			<em class="fr"><a href="{dede:global.cfg_indexurl/}fuwulingyu/">更多&gt;&gt;</a></em>
+		</div>
+		<ul class="ik-col">
+			<li class="ikc-icon5">
+				<a href="{dede:global.cfg_indexurl/}yingxiang">
+					<p><i></i><em></em></p>
+				</a>
+			</li>
+			<li class="ikc-icon6">
+				<a href="{dede:global.cfg_indexurl/}huanbaoguanjia/73.html">
+					<p><i></i><em></em></p>
+				</a>
+			</li>
+			<li class="ikc-icon3">
+				<a href="{dede:global.cfg_indexurl/}shuili/">
+					<p><i></i><em></em></p>
+				</a>
+			</li>
+			<li class="ikc-icon4 mro">
+				<a href="{dede:global.cfg_indexurl/}keyan/">
+					<p><i></i><em></em></p>
+				</a>
+			</li>
+		</ul>
+		<div class="ik-img">
+			<a style="display:block;" href="{dede:global.cfg_indexurl/}huanjing/"><img src="{dede:global.cfg_templets_skin/}/images/17f3112ed7f6d17986953c0bcb25cf69.jpg" alt=""></a>
+			<a href="{dede:global.cfg_indexurl/}gongcheng/"><img src="{dede:global.cfg_templets_skin/}/images/03aa6eaa9eb7b6ee15924f208b19ea73.jpg" alt=""></a>
+			<a href="{dede:global.cfg_indexurl/}shuili/"><img src="{dede:global.cfg_templets_skin/}/images/8981814bc0c4bc0c6cff7a66e8d7eeda.jpg" alt=""></a>
+			<a href="{dede:global.cfg_indexurl/}keyan/"><img src="{dede:global.cfg_templets_skin/}/images/0673e1d7ce9c4ddfe0472f137e6141d4.jpg" alt=""></a>
+
+		</div>
+	</div>
+</div>
+
+{dede:include filename="footer.htm"/}
+
+<!--
+	作者：songyan130@163.com
+	时间：2018-01-24
+	描述：百度统计js代码
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?381b3d94e79a6df0e21503d4d877424b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+ -->

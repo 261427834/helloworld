@@ -1,0 +1,1 @@
+<img src="/templets/test/images/fenyebanner[field:id/].jpg" alt="[field:typename/]" />

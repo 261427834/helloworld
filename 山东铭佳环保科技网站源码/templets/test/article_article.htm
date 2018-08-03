@@ -1,0 +1,36 @@
+{dede:include filename="head.htm"/}
+{dede:include filename="banner.htm"/}
+
+    <div class="cub mo">
+        <div class="cub-lt fl">
+    <ul class="cubl-list most">
+                
+        <li>
+        	<a href="{dede:global.cfg_indexurl/}">返回首页</a>  
+        </li>
+        {dede:channel    row='7'    type ='top'   currentstyle="<li><a class='act'href='~typelink~' >~typename~</a> </li>"                 }
+        <li>
+        		<a  href="[field:typelink/]">[field:typename/]</a>
+        </li>
+        {/dede:channel}
+    </ul>
+</div>
+        <div class="cub-rt fr">
+            <div class="cubr-col most">
+                <b class="fl"></b>
+                <p class="fr">
+                    <span class="fl"><title>{dede:field name='title'/}_{dede:global name='cfg_webname'/}</title></span>
+                    
+                </p>
+            </div>
+            <div class="cubxz qzx-adcs">
+                <h1 class="qhx-title">{dede:field.title/}</h1>
+                <div class="qhx-time">{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<span>山东铭佳环保</span></div>
+                <div class="qhx-tx">
+                	
+                	<section class="" powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-family: &quot;Helvetica Neue&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, 黑体, Arial, sans-serif; white-space: normal; word-wrap: break-word !important;"><section class="" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><section class="" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; font-size: 15px; line-height: 1.75; word-wrap: break-word !important;"><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; clear: both; min-height: 1em; text-align: justify; word-wrap: break-word !important;">{dede:field.body/}</section></section></section> </div>
+            </div>
+        </div>
+    </div>
+</div>
+{dede:include filename="footer.htm"/}

@@ -1,0 +1,1 @@
+<img src="/templets/test/images/logo.png" alt="[field:typename/]" />

@@ -1,0 +1,1 @@
+<img src="/templets/test/images/banner[field:id/]" alt="[field:typename/]" />

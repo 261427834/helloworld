@@ -1,0 +1,1 @@
+<img src="{dede:global.cfg_templets_skin/}/images/banner[field:id/]" alt="[field:typename/]" />

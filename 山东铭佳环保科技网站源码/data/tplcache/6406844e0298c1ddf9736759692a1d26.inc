@@ -1,0 +1,1 @@
+<img class="bannerIma"style="text-align: center;" src="/templets/test/images/fenyebanner14.jpg" width="1343"height="350"  alt="山东铭佳环保科技-[field:typename/]" />

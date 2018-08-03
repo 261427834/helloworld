@@ -1,0 +1,2 @@
+<li ><span ><a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" /></a></span><b>
+                    	<a href="[field:arcurl/]">[field:typelink/]-[field:title/]</a></b><p></p><em>[field:pubdate function="MyDate('Y-m-d',@me)"/]</em></li>

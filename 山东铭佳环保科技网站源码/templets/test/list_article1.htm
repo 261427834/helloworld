@@ -1,0 +1,58 @@
+{dede:include filename="head.htm"/}
+
+<div class="content">
+    <div class="cu-banner" style="text-align: center;margin: 1px auto;" >
+	{dede:type}
+	<img class="bannerIma"style="text-align: center;" src="/templets/test/images/fenyebanner14.jpg" width="1343"height="350"  alt="[field:typename/]" />
+	{/dede:type}
+</div>
+    <div class="cub mo">
+        <div class="cub-lt fl">
+    <ul class="cubl-list most">
+       <!--
+       	作者：songyan130@163.com
+       	时间：2018-02-09
+       	描述：
+       -->  
+       {dede:channelartlist row='2' typeid='31,32'  currentstyle="<li><a href='~typelink~' class='act'>~typename~</a> </li>" }
+        <li>
+        	<a  href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a>
+        </li>
+        {/dede:channelartlist}
+    </ul>
+</div>
+        <div class="cub-rt fr">
+            <div class="cubr-col most">
+                <b class="fl"></b>
+                <p class="fr">
+                    <span class="fl">{dede:field.seotitle /}</span>
+                    <em class="fr">当前位置：<a class="act" href="[field:typelink/]">{dede:field name='position'/}</a></em>
+                </p>
+            </div>
+            
+    <!--
+    	作者：songyan130@163.com
+    	时间：2018-02-09
+    	描述：调用文章列表
+    -->        
+    <div class="cubxz">
+<ul class="qh-list qz-nscs">
+{dede:list pagesize ='20'}	
+                    <li ><span ><a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" /></a></span><b>
+                    	<a href="[field:arcurl/]">[field:typelink/]-[field:title/]</a></b><p></p><em>[field:pubdate function="MyDate('Y-m-d',@me)"/]</em></li>
+{/dede:list}                    
+</ul>
+  <!--
+  	作者：songyan130@163.com
+  	时间：2018-02-09
+  	描述：底部页码开始
+  -->
+  
+<div style='margin: 0 auto;text-align: center;'>  
+	<ul class="num" style="display: inline;">
+		{dede:pagelist istitem='pre,next,' listsize='3' /}
+	</ul>
+</div>
+
+
+{dede:include filename="footer.htm"/}
