@@ -1,0 +1,1 @@
+<a class="btn btn-primary btn-lg see-button hvr-shutter-out-horizontal" href="[field:typelink/]" role="button">查看更多</a>

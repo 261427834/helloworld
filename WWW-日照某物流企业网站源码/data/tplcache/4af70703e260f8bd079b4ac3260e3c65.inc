@@ -1,0 +1,1 @@
+<li><a href='[field:typelink/]'  rel='dropmenu2'>[field:typename/]</a></li>

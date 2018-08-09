@@ -1,0 +1,83 @@
+<!-- footer -->
+<div class="footer"> 
+  <!-- container -->
+  <div class="container">
+    <div class="col-md-6 footer-left  wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+      <ul>
+        {dede:type typeid='42'}
+        <li><a href='[field:typelink/]' >[field:typename/]</a></li>
+        {/dede:type}
+        {dede:type typeid='43'}
+        <li><a href='[field:typelink/]'  rel='dropmenu2'>[field:typename/]</a></li>
+        {/dede:type}
+        {dede:type typeid='44'}
+        <li><a href='[field:typelink/]' >[field:typename/]</a></li>
+        {/dede:type}
+        {dede:type typeid='45'}
+        <li><a href='[field:typelink/]' >[field:typename/]</a></li>
+        {/dede:type}
+      </ul>
+      <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="action" value="post" />
+        <input type="hidden" name="diyid" value="1" />
+        <input type="hidden" name="do" value="2" />
+        <input type='text' name='email' id='email' placeholder="您的邮箱" required value='' />
+        <input type="hidden" name="dede_fields" value="email,text" />
+        <input type="hidden" name="dede_fieldshash" value="ecf2be13b9a2f43132f84a311557c17a" />
+        <input type="submit" value="订阅">
+      </form>
+    </div>
+    <div class="col-md-3 footer-middle wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+      <h3>联系我们</h3>
+      <div class="address">
+        <p>{dede:global.cfg_dz/}</p>
+      </div>
+      <div class="phone">
+        <p>{dede:global.cfg_tel/}</p>
+      </div>
+    </div>
+    <div class="col-md-3 footer-right  wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"> <a href="/"><img src="/skin/images/logo.png" alt="" /></a>
+      <p>{dede:sql sql='Select content from dede_arctype where id=42'} 
+        [field:content  function='cn_substr(html2text(@me),300)'/]...
+        {/dede:sql}</p>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+  <!-- //container --> 
+</div>
+<!-- //footer -->
+<div class="copyright"> 
+  <!-- container -->
+  <div class="container">
+    <div class="copyright-left wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+      <p>Copyright &copy; 2009-2015 <a href="http://www.rizhaowl.com/" target="_blank">日照物流</a> 日照物流</p>
+    </div>
+    <div class="copyright-right wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+      <ul>
+        <li><a href="#" class="twitter"> </a></li>
+        <li><a href="#" class="twitter facebook"> </a></li>
+        <li><a href="#" class="twitter chrome"> </a></li>
+        <li><a href="#" class="twitter pinterest"> </a></li>
+        <li><a href="#" class="twitter linkedin"> </a></li>
+        <li><a href="#" class="twitter dribbble"> </a></li>
+      </ul>
+    </div>
+    <div class="clearfix"> </div>
+    <script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+			</script> 
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a> </div>
+  <!-- //container --> 
+</div>

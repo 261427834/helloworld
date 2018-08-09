@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{dede:global.cfg_webname/}</title>
+		<meta name="description" content="{dede:global.cfg_description/}" />
+		<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+		<link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- bootstarp-css -->
+		<link href="/skin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<!--// bootstarp-css -->
+		<!-- css -->
+		<link rel="stylesheet" href="/skin/css/style.css" type="text/css" media="all" />
+		<!--// css -->
+		<script src="/skin/js/jquery-1.11.1.min.js"></script>
+		<!--fonts-->
+		<link href='/skin/css/font.css' rel='stylesheet' type='text/css'>
+		<!--/fonts-->
+		<link href="/skin/css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="/skin/js/wow.min.js"></script>
+		<script>
+	 new WOW().init();
+</script>
+		<!--start-smoth-scrolling-->
+		<script type="text/javascript" src="/skin/js/move-top.js"></script>
+		<script type="text/javascript" src="/skin/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+		<!--start-smoth-scrolling-->
+
+		</head>
+		<body>
+<div id="home" class="banner a-banner"> 
+          <!-- container -->
+          <div class="container">
+    <div class="header">
+              <div class="head-logo"> <a href="/"><img src="/skin/images/logo.png" alt="" /></a> </div>
+              <div class="top-nav"> <span class="menu"><img src="/skin/images/menu.png" alt=""></span>
+        <ul class="nav1">
+                  <li class="hvr-sweep-to-bottom"><a href="/">首页<i><img src="/skin/images/nav-but0.png" alt=""/></i></a></li>
+                  {dede:channel type='top' row='10' currentstyle="
+                  <li class='active'><a href='~typelink~' ~rel~>~typename~<i><img src='/skin/images/nav-but1.png'/></i></a></li>
+                  "}
+                  <li class="hvr-sweep-to-bottom"><a href="[field:typeurl/]">[field:typename/]<i><img src="/skin/images/nav-but[field:global name=autoindex runphp="yes"]@me=@me+1;[/field:global].png" alt=""/></i></a></li>
+                  {/dede:channel}
+                  <div class="clearfix"> </div>
+                </ul>
+        <!-- script-for-menu --> 
+        <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script> 
+        <!-- /script-for-menu --> 
+      </div>
+              <div class="clearfix"> </div>
+            </div>
+  </div>
+          <!-- //container --> 
+        </div>
+<!-- about -->
+<div class="about-top"> 
+          <!-- container -->
+          <div class="container">
+    <div class="banner-bottom-grids a-banner-bottom-grids">
+              <div class="col-md-7 a-banner-bottom-text" style="width:100%;">
+        <div class="jumbotron banner-bottom-left wow fadeInLeft animated animated cont-list" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+                  <h3>关于</h3>
+                  <h5>日照物流</h5>
+                  <p> {dede:field.content/} </p>
+                </div>
+      </div>
+              <div class="clearfix"> </div>
+            </div>
+  </div>
+          <!-- //container --> 
+        </div>
+<!-- //about --> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

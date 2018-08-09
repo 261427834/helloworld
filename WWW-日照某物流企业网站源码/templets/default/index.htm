@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>{dede:global.cfg_webname/}</title>
+		<meta name="description" content="{dede:global.cfg_description/}" />
+		<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+		<link rel="shortcut icon" href="{dede:global.cfg_cmsurl/}/favicon.ico" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<link href="/skin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="/skin/css/style.css" type="text/css" media="all" />
+		<script src="/skin/js/jquery-1.11.1.min.js"></script>
+		<link href='/skin/css/font.css' rel='stylesheet' type='text/css'>
+		<link href="/skin/css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="/skin/js/wow.min.js"></script>
+		<script>
+	 new WOW().init();
+</script>
+		<!--start-smoth-scrolling-->
+		<script type="text/javascript" src="/skin/js/move-top.js"></script>
+		<script type="text/javascript" src="/skin/js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+		<!--start-smoth-scrolling-->
+		</head>
+		<body>
+<div id="home" class="banner a-banner"> 
+          <!-- container -->
+          <div class="container">
+    <div class="header">
+              <div class="head-logo"> <a href="/"><img src="/skin/images/logo.png" alt="" /></a> </div>
+              <div class="top-nav"> <span class="menu"><img src="/skin/images/menu.png" alt=""></span>
+        <ul class="nav1">
+                  <li class="hvr-sweep-to-bottom active"><a href="/">首页<i><img src="/skin/images/nav-but0.png" alt=""/></i></a></li>
+                  {dede:channel type='top' row='10' currentstyle="
+                  <li class='active'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+                  "}
+                  <li class="hvr-sweep-to-bottom "><a href="[field:typeurl/]">[field:typename/]<i><img src="/skin/images/nav-but[field:global name=autoindex runphp="yes"]@me=@me+1;[/field:global].png" alt=""/></i></a></li>
+                  {/dede:channel}
+                  <div class="clearfix"> </div>
+                </ul>
+        <!-- script-for-menu --> 
+        <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script> 
+        <!-- /script-for-menu --> 
+      </div>
+              <div class="clearfix"> </div>
+            </div>
+  </div>
+          <!-- //container -->
+          <div class="container"> 
+    <script src="/skin/js/responsiveslides.min.js"></script> 
+    <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					  </script>
+    <div  id="top" class="callbacks_container">
+              <ul class="rslides" id="slider3">
+        <li>
+                  <div class="banner-info">
+            <h2>日照物流有限公司</h2>
+            <div class="line"> </div>
+            <p>本公司主要经营国内货物运输代理,承接国内海运和空运的进出口代理业务,并提供集装箱储运（堆场、仓库、车队）等拖卡进仓服务及海运空运的进出口报关代理业务，有自己专业的报关团队，形成了订舱，拖卡，报关，签单等一条龙服务。同时本公司拥有自身完善的海外代理,并在全国设有多家分公司，可以满足广大客户各方面的需求。</p>
+          </div>
+                </li>
+        <li>
+                  <div class="banner-info">
+            <h2>致力于打造专业的国内国内物流服务</h2>
+            <div class="line"> </div>
+            <p>本公司的服务宗旨是以发展现代物流事业为己任，以先进的服务理念和世界性的服务体系，本着最真诚的态度竭诚为中外货主提供最优质、高效、便捷的服务。</p>
+          </div>
+                </li>
+      </ul>
+            </div>
+  </div>
+        </div>
+<!-- banner-bottom -->
+<div class="banner-bottom"> 
+          <!-- container -->
+          <div class="container">
+    <div class="banner-bottom-grids">
+              <div class="col-md-7 banner-bottom-grid-text">
+        <div class="jumbotron banner-bottom-left wow fadeInLeft animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
+                  <h3>致力于打造专业的国内物流服务</h3>
+                  <h5>关于我们</h5>
+                  <p>{dede:sql sql='Select content from dede_arctype where id=42'} 
+            [field:content  function='cn_substr(html2text(@me),600)'/]...
+            {/dede:sql}</p>
+                  <div class="see-button"> {dede:type typeid='42'}<a class="btn btn-primary btn-lg see-button hvr-shutter-out-horizontal" href="[field:typelink/]" role="button">查看更多</a>{/dede:type} </div>
+                </div>
+      </div>
+              <div class="col-md-5 banner-bottom-right wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;"> <img src="/skin/images/1-15100q053140-l.jpg" alt="{dede:global.cfg_webname/}"/> </div>
+              <div class="clearfix"> </div>
+            </div>
+  </div>
+          <!-- //container --> 
+        </div>
+<!-- //banner-bottom --> 
+<!-- specialty -->
+<div class="specialty"> 
+          <!-- container -->
+          <div class="container">
+    <div class="col-md-5 specialty-info wow fadeInLeft animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;"> {dede:arclist row='1' infolen='300' titlelen='32' typeid='43'  idlist='5'}
+              <h3>[field:title/]</h3>
+              <h5>[field:info/]...</h5>
+              {/dede:arclist}
+              <div class="jianjie"> {dede:arclist row='1' infolen='300' titlelen='32' typeid='43'  idlist='6'}
+        <h3>[field:title/]</h3>
+        <span>[field:info/]...</span> {/dede:arclist} </div>
+              <div class="see-button"> {dede:type typeid='43'}<a class="btn btn-primary btn-lg see-button hvr-shutter-out-horizontal specialty-button" href="[field:typelink/]" role="button">查看更多</a> {/dede:type}</div>
+            </div>
+    <div class="col-md-7 specialty-grids">
+              <div class="specialty-grids-top"> {dede:arclist row='1' infolen='100' titlelen='32' typeid='43'  idlist='4'}
+        <div class="col-md-6 service-box wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                  <figure class="icon"> <a href="[field:arcurl/]"><img src="/skin/images/1-15100q10404315.png" alt="[field:title/]" /></a> </figure>
+                  <h5>[field:title/]</h5>
+                  <p>[field:info/]...</p>
+                </div>
+        {/dede:arclist}    
+        {dede:arclist row='1' infolen='100' titlelen='32' typeid='43'  idlist='3'}
+        <div class="col-md-6 service-box wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                  <figure class="icon"> <a href="[field:arcurl/]"><img src="/skin/images/1-15100q104390-l.png" alt="[field:title/]" /></a> </figure>
+                  <h5>[field:title/]</h5>
+                  <p>[field:info/]...</p>
+                </div>
+        {/dede:arclist}
+        <div class="clearfix"> </div>
+      </div>
+              <div class="specialty-grids-top"> {dede:arclist row='1' infolen='100' titlelen='32' typeid='43'  idlist='2'}
+        <div class="col-md-6 service-box wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                  <figure class="icon"> <a href="[field:arcurl/]"><img src="/skin/images/1-15100q105030-l.png" alt="[field:title/]" /></a> </figure>
+                  <h5>[field:title/]</h5>
+                  <p>[field:info/]...</p>
+                </div>
+        {/dede:arclist}   
+        {dede:arclist row='1' infolen='100' titlelen='32' typeid='43'  idlist='1'}
+        <div class="col-md-6 service-box wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                  <figure class="icon"> <a href="[field:arcurl/]"><img src="/skin/images/1-15100q105200-l.png" alt="[field:title/]" /></a> </figure>
+                  <h5>[field:title/]</h5>
+                  <p>[field:info/]...</p>
+                </div>
+        {/dede:arclist}
+        <div class="clearfix"> </div>
+      </div>
+            </div>
+    <div class="clearfix"> </div>
+  </div>
+          <!-- //container --> 
+        </div>
+<!-- //specialty --> 
+<!-- testimonials -->
+<div class="testimonials"> {dede:arclist row='1' infolen='400' titlelen='32' typeid='42'  idlist='7'}
+          <div class="container">
+    <div class="testimonial-nfo wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+              <h3>[field:title/]</h3>
+              <h5>Company honor</h5>
+            </div>
+    <div class="testimonial-grids wow fadeInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+              <div class="testimonial-grid">
+        <p><span>"</span>[field:info/]...<span> "</span></p>
+      </div>
+              <div class="see-button"> <a class="btn btn-primary btn-lg see-button hvr-shutter-out-horizontal specialty-button" href="[field:arcurl/]" role="button">查看更多</a> </div>
+            </div>
+  </div>
+          {/dede:arclist} </div>
+<!-- //testimonials --> 
+<!-- news -->
+<div class="news">
+          <div class="container">
+    <div class="news-text">
+              <h3>新闻动态</h3>
+              <h5>Company news</h5>
+            </div>
+    <div class="news-grids"> {dede:arclist row='4' infolen='140' titlelen='32' typeid='44'}
+              <div class="col-md-3 news-grid wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"> <a href="[field:arcurl/]" title="[field:title/]">
+                <h4>[field:title/]...</h4>
+                </a> <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span> <a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" /></a>
+        <div class="news-info">
+                  <p>[field:info/]...</p>
+                </div>
+      </div>
+              {/dede:arclist}
+              <div class="clearfix"> </div>
+            </div>
+  </div>
+        </div>
+<!-- //news --> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>
